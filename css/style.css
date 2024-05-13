@@ -164,6 +164,11 @@ header .top--header_contactbtn{
   text-shadow: #000 1px 0 10px;
   line-height: 15vw;
 }
+.order img{
+  display: block;
+  width: 35%;
+  margin: 0 auto;
+}
 /* contact 終わり */
 /* Leaflets_flyers */
 .Leaflets_flyers h2{
