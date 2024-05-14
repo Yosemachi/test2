@@ -110,6 +110,8 @@ header .top--header_contactbtn{
 }
 .top--panf_wrap .panfs div{
   display: flex;
+  padding: 0 0.4vw;
+  gap: 0.5vw;
 }
 .top--panf_wrap .panfs .panfs_content{
   border-top: 1px dotted #fff;
@@ -119,6 +121,8 @@ header .top--header_contactbtn{
 .top--panf_wrap .panfs .goods_wrap{
   display: block;
   height: 120px;
+  font-size: 20px;
+  font-weight: 700;
 }
 .top--panf_wrap .panfs1 div .goodsicon1{
   background-color: white;
@@ -178,7 +182,7 @@ header .top--header_contactbtn{
   padding: 0 10px;
   margin: 25px auto;
   border-radius: 10px;
-  font-weight: 400;
+  font-weight: 700;
 }
 .Leaflets_flyers span{
   font-size: 16px;
@@ -190,16 +194,40 @@ header .top--header_contactbtn{
   margin: 50px 0;
 }
 .Leaflets_flyers .Leaflets_flyers_content table{
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
+  border-spacing: 0 30px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.Leaflets_flyers .Leaflets_flyers_content table tr{
+  position: relative;
+}
+
+.Leaflets_flyers .Leaflets_flyers_content table tr:last-child::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  content: '';
+  height: 1px;
+  border-bottom: none;
+}
+.Leaflets_flyers .Leaflets_flyers_content table tr::after{
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  width: 100%;
+  display: block;
+  content: '';
+  height: 1px;
+  border-bottom: 1px solid #000;
 }
 .Leaflets_flyers .Leaflets_flyers_content table tbody tr td{
   padding: 20px;
   font-size: 2vw;
   text-align: center;
-  border-top: 1px solid #000;
-}
-.Leaflets_flyers .Leaflets_flyers_content table tbody tr td{
-  border-bottom: 1px solid #000;
+  /* border-top: 1px solid #000; */
 }
 .Leaflets_flyers .Leaflets_flyers_content table tbody tr td:first-child{
   border-right: 1px dotted #000;
@@ -209,18 +237,33 @@ header .top--header_contactbtn{
 .Leaflets_flyers .Leaflets_flyers_content table tbody tr td{
   border-left: 1px dotted #000;
   height: 95%;
+  height: 233px;
+  min-height: 233px;
+  max-height: 233px;
 }
 .Leaflets_flyers .Leaflets_flyers_content table tbody tr td div label{
   background-color: #DADADA;
   display: block;
   font-size: 1.2vw;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.Leaflets_flyers .Leaflets_flyers_content table tbody tr td div p{
+  font-size: 1.8vw;
+}
+.Leaflets_flyers .Leaflets_flyers_content table tbody tr td div:first-child p{
+  font-weight: 700;
+}
+.Leaflets_flyers .Leaflets_flyers_content table tbody tr td div:last-child p{
+  color: #FF0000;
+  font-weight: 700;
 }
 .Leaflets_flyers .Leaflets_flyers_content table tbody tr td div .memberprice{
   background-color: #FF0000;
   color: white;
   font-size: 1.5vw;
 }
-.Leaflets_flyers .Leaflets_flyers_content .ttl{
+.Leaflets_flyers .Leaflets_flyers_content .ttl1{
   background-color: #EF9300;
   color: white;
   font-size: 1.7vw;
@@ -228,9 +271,32 @@ header .top--header_contactbtn{
   padding: 10px;
   border-radius: 10px;
   margin: 0 10px;
+  font-weight: 700;
 }
-.Leaflets_flyers .Leaflets_flyers_content .subttl{
+.Leaflets_flyers .Leaflets_flyers_content .subttl1{
   background-color: rgba(239, 147, 0, 30%);
+  border-radius: 10px;
+  display: block;
+  padding: 10px 20px;
+  font-size: 1.5vw;
+  /* margin: auto; */
+  text-align: center;
+  line-height: 95vh;
+  margin: 0 10px;
+  font-weight: 700;
+}
+.Leaflets_flyers .Leaflets_flyers_content .ttl2{
+  background-color: #EC8000;
+  color: white;
+  font-size: 1.7vw;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 10px;
+  font-weight: 700;
+}
+.Leaflets_flyers .Leaflets_flyers_content .subttl2{
+  background-color: rgba(236,128,0,30%);
   border-radius: 10px;
   display: block;
   padding: 10px 20px;
@@ -239,6 +305,29 @@ header .top--header_contactbtn{
   text-align: center;
   line-height: 80vh;
   margin: 0 10px;
+  font-weight: 700;
+}
+.Leaflets_flyers .Leaflets_flyers_content .ttl3{
+  background-color: #E65504;
+  color: white;
+  font-size: 1.7vw;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 10px;
+  font-weight: 700;
+}
+.Leaflets_flyers .Leaflets_flyers_content .subttl3{
+  background-color: rgba(230,85,4,30%);
+  border-radius: 10px;
+  display: block;
+  padding: 10px 20px;
+  font-size: 1.5vw;
+  /* margin: auto; */
+  text-align: center;
+  line-height: 80vh;
+  margin: 0 10px;
+  font-weight: 700;
 }
 /* .Leaflets_flyers div table tbody tr td{
   display: flex;
@@ -252,7 +341,7 @@ header .top--header_contactbtn{
   padding: 0 10px;
   margin: 25px auto;
   border-radius: 10px;
-  font-weight: 400;
+  font-weight: 700;
 }
 .bifold_leaflet span{
   font-size: 16px;
@@ -264,19 +353,51 @@ header .top--header_contactbtn{
   margin: 50px 0;
 }
 .bifold_leaflet .bifold_leaflet_content table{
-  border-collapse: collapse;
+  border-spacing: 0 30px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.bifold_leaflet .bifold_leaflet_content table tr{
+  position: relative;
+}
+.bifold_leaflet .bifold_leaflet_content table tr:last-child::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  content: '';
+  height: 1px;
+  border-bottom: none;
+}
+.bifold_leaflet .bifold_leaflet_content table tr::after{
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  width: 100%;
+  display: block;
+  content: '';
+  height: 1px;
+  border-bottom: 1px solid #000;
 }
 .bifold_leaflet .bifold_leaflet_content table tbody tr td{
   padding: 20px;
   font-size: 2vw;
   text-align: center;
-  border-top: 1px solid #000;
+  /* border-top: 1px solid #000; */
 }
-.bifold_leaflet .bifold_leaflet_content table tbody tr td{
-  border-bottom: 1px solid #000;
+.bifold_leaflet .bifold_leaflet_content table tbody tr td div p{
+  font-size: 1.8vw;
+}
+.bifold_leaflet .bifold_leaflet_content table tbody tr td div:first-child p{
+  font-weight: 700;
+}
+.bifold_leaflet .bifold_leaflet_content table tbody tr td div:last-child p{
+  color: #FF0000;
+  font-weight: 700;
 }
 .bifold_leaflet .bifold_leaflet_content table tbody tr td:first-child{
-  border-right: 1px dotted #000;
+  /* border-right: 1px dotted #000; */
   border-left: none;
   height: 95%;
 }
@@ -288,13 +409,15 @@ header .top--header_contactbtn{
   background-color: #DADADA;
   display: block;
   font-size: 1.2vw;
+  font-weight: 700;
+  margin: 20px 0;
 }
 .bifold_leaflet .bifold_leaflet_content table tbody tr td div .memberprice{
   background-color: #FF0000;
   color: white;
   font-size: 1.5vw;
 }
-.bifold_leaflet .bifold_leaflet_content .ttl{
+.bifold_leaflet .bifold_leaflet_content .ttl1{
   background-color: #8ABF1F;
   color: white;
   font-size: 1.7vw;
@@ -302,8 +425,9 @@ header .top--header_contactbtn{
   padding: 10px;
   border-radius: 10px;
   margin: 0 10px;
+  font-weight: 700;
 }
-.bifold_leaflet .bifold_leaflet_content .subttl{
+.bifold_leaflet .bifold_leaflet_content .subttl1{
   background-color: rgba(138, 191, 31, 30%);
   border-radius: 10px;
   display: block;
@@ -313,6 +437,29 @@ header .top--header_contactbtn{
   text-align: center;
   line-height: 80vh;
   margin: 0 10px;
+  font-weight: 700;
+}
+.bifold_leaflet .bifold_leaflet_content .ttl2{
+  background-color: #00a33c;
+  color: white;
+  font-size: 1.7vw;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 10px;
+  font-weight: 700;
+}
+.bifold_leaflet .bifold_leaflet_content .subttl2{
+  background-color: rgba(0,163,60, 30%);
+  border-radius: 10px;
+  display: block;
+  padding: 10px 20px;
+  font-size: 1.5vw;
+  /* margin: auto; */
+  text-align: center;
+  line-height: 80vh;
+  margin: 0 10px;
+  font-weight: 700;
 }
 /* bifold_leaflet_content 終わり */
 /* bifold_leaflet_content */
@@ -323,7 +470,7 @@ header .top--header_contactbtn{
   padding: 0 10px;
   margin: 25px auto;
   border-radius: 10px;
-  font-weight: 400;
+  font-weight: 700;
 }
 .saddle_stitched_brochure span{
   font-size: 16px;
@@ -339,19 +486,58 @@ header .top--header_contactbtn{
   margin: 50px 0;
 }
 .saddle_stitched_brochure .saddle_stitched_brochure_content table{
-  border-collapse: collapse;
+  border-spacing: 0 30px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  width: 1100px;
+  min-width: 1100px;
+  max-width: 1100px;
+}
+.saddle_stitched_brochure .saddle_stitched_brochure_content table tr{
+  position: relative;
+}
+.saddle_stitched_brochure .saddle_stitched_brochure_content table tr:last-child::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  content: '';
+  height: 1px;
+  border-bottom: none;
+}
+.saddle_stitched_brochure .saddle_stitched_brochure_content table tr::after{
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  width: 100%;
+  display: block;
+  content: '';
+  height: 1px;
+  border-bottom: 1px solid #000;
+}
+
+.saddle_stitched_brochure .saddle_stitched_brochure_content table tbody tr td div p{
+  font-size: 1.8vw;
+}
+.saddle_stitched_brochure .saddle_stitched_brochure_content table tbody tr td div:first-child p{
+  font-weight: 700;
+}
+.saddle_stitched_brochure .saddle_stitched_brochure_content table tbody tr td div:last-child p{
+  color: #FF0000;
+  font-weight: 700;
 }
 .saddle_stitched_brochure .saddle_stitched_brochure_content table tbody tr td{
   padding: 20px;
   font-size: 2vw;
   text-align: center;
-  border-top: 1px solid #000;
+  /* border-top: 1px solid #000; */
 }
 .saddle_stitched_brochure .saddle_stitched_brochure_content table tbody tr td{
-  border-bottom: 1px solid #000;
+  /* border-bottom: 1px solid #000; */
 }
 .saddle_stitched_brochure .saddle_stitched_brochure_content table tbody tr td:first-child{
-  border-right: 1px dotted #000;
+  /* border-right: 1px dotted #000; */
   border-left: none;
   height: 95%;
 }
@@ -363,23 +549,26 @@ header .top--header_contactbtn{
   background-color: #DADADA;
   display: block;
   font-size: 1.2vw;
+  font-weight: 700;
+  margin: 20px 0;
 }
 .saddle_stitched_brochure .saddle_stitched_brochure_content table tbody tr td div .memberprice{
   background-color: #FF0000;
   color: white;
   font-size: 1.5vw;
 }
-.saddle_stitched_brochure .ttl{
-  background-color: #8ABF1F;
+.saddle_stitched_brochure .ttl2{
+  background-color: #E10065;
   color: white;
   font-size: 1.7vw;
   text-align: center;
   padding: 10px;
   border-radius: 10px;
   margin: 0 10px;
+  font-weight: 700;
 }
-.saddle_stitched_brochure .saddle_stitched_brochure_content .subttl{
-  background-color: rgba(138, 191, 31, 30%);
+.saddle_stitched_brochure .saddle_stitched_brochure_content .subttl2{
+  background-color: rgba(255, 0, 101, 30%);
   border-radius: 10px;
   display: block;
   padding: 10px 0;
@@ -387,7 +576,31 @@ header .top--header_contactbtn{
   font-size: 1.5vw;
   /* margin: auto; */
   text-align: center;
-  line-height: 80vh;
+  line-height: 95vh;
   margin: 0 10px;
+  font-weight: 700;
+}
+.saddle_stitched_brochure .ttl1{
+  background-color: #E86D80;
+  color: white;
+  font-size: 1.7vw;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 10px;
+  font-weight: 700;
+}
+.saddle_stitched_brochure .saddle_stitched_brochure_content .subttl1{
+  background-color: rgba(232,109,128, 30%);
+  border-radius: 10px;
+  display: block;
+  padding: 10px 0;
+  width: 60px;
+  font-size: 1.5vw;
+  /* margin: auto; */
+  text-align: center;
+  line-height: 95vh;
+  margin: 0 10px;
+  font-weight: 700;
 }
 /* bifold_leaflet_content 終わり */
