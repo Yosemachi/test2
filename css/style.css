@@ -11,6 +11,7 @@ header{
   z-index: 1;
   background-color: white;
   height: 70px;
+  margin-top: -60px;
 }
 .header_wrap{
   display: flex;
@@ -56,6 +57,7 @@ header .top--header_contactbtn{
 /* top-mv_wrap */
 .top-mv_wrap{
   position: relative;
+  margin-top: 60px;
 }
 .top-mv_wrap img{
   width: 97%;
