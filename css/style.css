@@ -6,10 +6,18 @@
 }
 /* header */
 header{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  height: 70px;
+}
+.header_wrap{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  height: 100%;
 }
 header img{
   width: 238px;
@@ -63,6 +71,7 @@ header .top--header_contactbtn{
 /* top--panf_wrap */
 .top--panf_wrap{
   display: flex;
+  justify-content: center;
 }
 .top--panf_wrap .panfs{
   position: relative;
@@ -72,36 +81,42 @@ header .top--header_contactbtn{
   color: white;
   padding: 15px;
   border-radius: 40px;
-  width: 30%;
-  height: 120vh;
-  min-height: 700px;
+  width: 370px;
+  min-width: 370px;
+  max-width: 370px;
+  height: 750px;
+  min-height: 750px;
   margin: 20px;
-  max-height: 700px;
+  max-height: 750px;
 }
 .top--panf_wrap .panfs2{
   background-color: #00A33C;
   color: white;
   padding: 15px;
   border-radius: 40px;
-  width: 30%;
-  height: 120vh;
-  min-height: 700px;
+  width: 370px;
+  min-width: 370px;
+  max-width: 370px;
+  height: 750px;
+  min-height: 750px;
   margin: 20px;
-  max-height: 700px;
+  max-height: 750px;
 }
 .top--panf_wrap .panfs3{
   background-color: #E10065;
   color: white;
   padding: 15px;
   border-radius: 40px;
-  width: 30%;
-  height: 120vh;
-  min-height: 700px;
+  width: 370px;
+  min-width: 370px;
+  max-width: 370px;
+  height: 750px;
+  min-height: 750px;
   margin: 20px;
-  max-height: 700px;
+  max-height: 750px;
 }
 .top--panf_wrap .panfs h2{
-  font-size: 2.3vw;
+  font-size: 2vw;
   text-align: center;
 }
 .top--panf_wrap .panfs img{
@@ -117,12 +132,17 @@ header .top--header_contactbtn{
   border-top: 1px dotted #fff;
   padding: 10px 0 0 0;
   line-height: 2vw;
+  font-size: 14.5px;
 }
 .top--panf_wrap .panfs .goods_wrap{
   display: block;
   height: 120px;
   font-size: 20px;
   font-weight: 700;
+  margin-bottom: 35px;
+}
+.top--panf_wrap .panfs .goods_wrap div{
+  margin: 15px 0;
 }
 .top--panf_wrap .panfs1 div .goodsicon1{
   background-color: white;
@@ -149,7 +169,7 @@ header .top--header_contactbtn{
   width: auto;
   height: auto;
   position: absolute;
-  bottom: 100px;
+  bottom: 35px;
   margin: 0 auto;
   right: 0;
   left: 0;
@@ -167,6 +187,10 @@ header .top--header_contactbtn{
   text-align: center;
   text-shadow: #000 1px 0 10px;
   line-height: 15vw;
+  margin: 100px 0;
+}
+.order{
+  margin: 50px 0;
 }
 .order img{
   display: block;
