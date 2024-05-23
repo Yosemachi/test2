@@ -64,12 +64,19 @@ header .top--header_contactbtn{
 }
 .top-mv_wrap p {
   position: absolute;
-  bottom: 30px;
+  bottom: 109px;
   left: 55px;
   font-size: 2.5vw;
   color: white;
 }
 /* top-mv_wrap 終わり */
+/* top-tel_wrap */
+.top-tel_wrap{
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+/* top-tel_wrap 終わり*/
 /* top--panf_wrap */
 .top--panf_wrap{
   display: flex;
@@ -180,7 +187,7 @@ header .top--header_contactbtn{
 /* contact */
 .contact{
   width: 100%;
-  height: 15vw;
+  height: 19vw;
   background-image: url(./../img/bg_contact.webp);
   background-repeat: no-repeat;
   background-size: cover;
@@ -188,13 +195,17 @@ header .top--header_contactbtn{
   color: white;
   text-align: center;
   text-shadow: #000 1px 0 10px;
-  line-height: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* line-height: 15vw; */
   margin: 100px 0;
 }
 .order{
   margin: 50px 0;
+  coursor: pointer;
 }
-.order img{
+.order a{
   display: block;
   width: 35%;
   margin: 0 auto;
